@@ -31,7 +31,6 @@ Una sola página (`index.html`) con estas secciones:
 | `flows.jsx` | Las 3 variaciones del flujo de reserva. |
 | `agenda.js` | Conexión con Google Calendar (o modo demo). |
 | `tweaks-panel.jsx` | Panel de ajustes en pantalla (colores, fuente, flujo). |
-| `CONFIGURAR-GOOGLE-CALENDAR.md` | Guía paso a paso para sincronizar los turnos con tu Google Calendar. |
 
 ---
 
@@ -48,65 +47,5 @@ Los logos y las fotos se cargan desde el sitio original alojado en GitHub.
 
 ---
 
-## 🗓️ Sistema de turnos
-
-- **Modalidad:** todas las sesiones son **online**.
-- **Días de atención:** **Martes, Jueves y Viernes** (Lunes, Miércoles, Sábado y Domingo están anulados).
-- **Datos que completa el cliente:** terapia, día, horario, nombre, teléfono/WhatsApp y email.
-- **Al confirmar:**
-  - El horario queda **bloqueado** para que no se vuelva a reservar.
-  - Se abre **WhatsApp** con el resumen del turno listo para enviarte.
-
-### 3 variaciones del flujo (cambiables desde el panel *Tweaks*)
-1. **Asistido** — panel lateral con pasos guiados.
-2. **Wizard** — pasos a pantalla completa con barra de progreso.
-3. **Express** — todo en una sola pantalla.
-
-### Modo demo vs. agenda real
-- **Modo demostración** (por defecto): los turnos se guardan solo en el navegador de cada persona. Sirve para probar.
-- **Agenda sincronizada con Google Calendar**: los turnos crean eventos reales en tu calendario y se bloquean para **todos** los visitantes. Un indicador arriba del formulario muestra en qué modo está.
-
-👉 Para activar la agenda real, seguí **`CONFIGURAR-GOOGLE-CALENDAR.md`**.
-
----
-
-## ⚙️ Panel de ajustes (Tweaks)
-
-Desde la barra de herramientas se puede abrir el panel **Tweaks** para probar en vivo:
-- Variación del flujo de turnos (Asistido / Wizard / Express)
-- Color de acento
-- Color de fondo de sección
-- Fuente de títulos
-
----
-
-## ✏️ Personalizaciones rápidas
-
-| Quiero cambiar… | Dónde |
-|---|---|
-| **Número de WhatsApp** | `booking.jsx` y `app.jsx`: buscar `5491154056339` |
-| **Instagram** | `app.jsx`: constante `IG` |
-| **Horarios ofrecidos** | `booking.jsx`: `SLOT_TIMES` |
-| **Días de atención** | `booking.jsx`: el array `[0,1,3,6]` (días cerrados) en el calendario |
-| **Terapias / duración / textos** | `booking.jsx`: `THERAPIES` y `app.jsx`: `THERAPY_LONG` |
-| **Colores / tipografías** | `styles.css` (variables `:root`) |
-| **URL de la agenda Google** | `index.html`: `window.NB_AGENDA = { endpoint: "" }` |
-
----
-
-## 🚀 Publicar (GitHub Pages)
-
-1. Subí todos los archivos al repositorio (reemplazando los anteriores).
-2. GitHub Pages se actualiza automáticamente.
-3. No es necesario subir capturas ni archivos que empiecen con `_`.
-
-Para ver el sitio en tu computadora, abrí `index.html` con doble clic (necesita conexión a internet para cargar fuentes e imágenes).
-
----
-
-## 📞 Contacto
-
-- Instagram: **@nitya_baktii_2023**
-- WhatsApp: **+54 9 11 5405-6339**
 
 © 2026 Nitya Bhaktii · Conectando con tu ser
